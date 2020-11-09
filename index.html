@@ -13,19 +13,28 @@ p {
 
   -webkit-text-stroke: 5px #ffffff;
 }
+lol {
+  text-align: center;
+  font-size: 180px;
+  margin-top: 0px;
+  color: #bc0101;
+  font-family: fantasy;
+
+  -webkit-text-stroke: 5px #ffffff;
+}
 </style>
 <style>
 .button {
   background-color: #000000;
   border: none;
-  color: #bc0101;
+  color: #43B00D;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-family: Helvetica;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 32px;
+  margin: 2px 2px;
   cursor: pointer;
 }
 body{
@@ -61,37 +70,23 @@ background-color: #ffffff;
 
 
 
-<center><h5><font face="Bedrock" size="120">jagut</font></h5><center>
+<center><lol>JAGUT wait for it</lol></center>
 <p id="count"></p>
-<br>
-
-<a href="https://open.spotify.com/playlist/6kPILTasAeziumZrtv2GEj?si=wq2KChdrRxaqrwwGjO4imw" class="button">Waste Time</a>
+<center><a href="https://open.spotify.com/playlist/6kPILTasAeziumZrtv2GEj?si=wq2KChdrRxaqrwwGjO4imw" class="button">Meanwhile listen to...</a></center>
 
 
 <script>
-// Set the date we're counting down to
+
 var countDownDate = new Date("Nov 22, 2020 16:00:00").getTime();
-
-// Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get today's date and time
   var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
   var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
   document.getElementById("count").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("count").innerHTML = "EXPIRED";
