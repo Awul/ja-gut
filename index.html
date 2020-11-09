@@ -1,22 +1,76 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>jagut</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
   text-align: center;
-  font-size: 60px;
+  font-size: 180px;
   margin-top: 0px;
+  color: #bc0101;
+  font-family: Helvetica;
+
+  -webkit-text-stroke: 5px #ffffff;
+}
+</style>
+<style>
+.button {
+  background-color: #000000;
+  border: none;
+  color: #bc0101;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body{
+    background-image: url('https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+<!-- HTML Codes by Quackit.com -->
+<!DOCTYPE html>
+<title>Text Example</title>
+<style>
+div.container {
+background-color: #000000;
+}
+div.container p {
+font-family: Helvetica;
+font-size: 14px;
+font-style: italic;
+font-weight: normal;
+text-decoration: none;
+text-transform: none;
+color: #bc0101;
+background-color: #ffffff;
 }
 </style>
 </head>
 <body>
 
-<p id="demo"></p>
+
+
+<center><h5><font face="Bedrock" size="120">jagut</font></h5><center>
+<p id="count"></p>
+<br>
+
+<a href="https://open.spotify.com/playlist/6kPILTasAeziumZrtv2GEj?si=wq2KChdrRxaqrwwGjO4imw" class="button">Waste Time</a>
+
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Nov 22, 2020 16:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -34,13 +88,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("count").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("count").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
